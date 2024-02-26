@@ -14,15 +14,15 @@ public class UltimateTeam {
         players.add(p1);
         players.add(p2);
 
-        public String getCutters(){
+        String getCutters(){
             for (UltimatePlayer p: players) {
                 if (p.getPosition().equals("Cutter")) {
-
+                    return players(p).getFirstName();
                 }
             }
         }
 
-        public String getHandlers(){
+        String getHandlers(){
             for (UltimatePlayer p: players) {
                 if (p.getPosition().equals("Handler")) {
 
